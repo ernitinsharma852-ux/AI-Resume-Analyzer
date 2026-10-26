@@ -1,0 +1,205 @@
+
+/* -------------------- Main Page -------------------- */
+
+.stApp {
+    background: linear-gradient(
+        135deg,
+        #f4f7fc 0%,
+        #edf3ff 50%,
+        #f8faff 100%
+    );
+    color: #334155;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Main content width and spacing */
+
+.block-container {
+    max-width: 1200px;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+/* -------------------- Headings -------------------- */
+
+h1 {
+    color: #4269a5 !important;
+    font-weight: 750 !important;
+    letter-spacing: -0.5px;
+}
+
+h2,
+h3 {
+    color: #4e70a9 !important;
+    font-weight: 700 !important;
+}
+
+/* Regular text */
+
+p,
+label,
+.stMarkdown,
+.stCaption {
+    color: #475569;
+}
+
+/* -------------------- Upload Box -------------------- */
+
+[data-testid="stFileUploader"] {
+    background: #ffffff;
+    border: 1px solid #dce6f7;
+    border-radius: 16px;
+    padding: 16px;
+    box-shadow: 0 4px 15px rgba(62, 96, 150, 0.05);
+}
+
+[data-testid="stFileUploaderDropzone"] {
+    background: #f6f9ff;
+    border: 1px dashed #9db8ed;
+    border-radius: 12px;
+}
+
+/* -------------------- Text Area -------------------- */
+
+.stTextArea textarea {
+    background: #ffffff !important;
+    color: #334155 !important;
+    border: 1px solid #a8bff0 !important;
+    border-radius: 14px !important;
+    font-size: 16px !important;
+    line-height: 1.6 !important;
+}
+
+.stTextArea textarea:focus {
+    border-color: #648bd5 !important;
+    box-shadow: 0 0 0 2px rgba(100, 139, 213, 0.15) !important;
+}
+
+/* -------------------- Buttons -------------------- */
+
+
+/* Light Blue Analyze Resume Button */
+.stButton > button {
+    background-color: #29A9E8 !important;
+    color: #ffffff !important;
+    border: 1px solid #29A9E8 !important;
+    border-radius: 12px !important;
+    font-size: 20px !important;
+    font-weight: 700 !important;
+    min-height: 58px !important;
+}
+
+.stButton > button:hover {
+    background-color: #1595D0 !important;
+    color: #ffffff !important;
+    border-color: #1595D0 !important;
+}
+
+
+.stDownloadButton > button {
+    background: #8da5d9;
+    color: #243b60;
+    border: 1px solid #829bd2;
+    border-radius: 12px;
+    padding: 12px 20px;
+    font-size: 15px;
+    font-weight: 600;
+    min-height: 48px;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 12px rgba(76, 108, 169, 0.10);
+}
+
+.stButton > button:hover,
+.stDownloadButton > button:hover {
+    background: #7895d0;
+    color: #ffffff;
+    border-color: #7895d0;
+    transform: translateY(-1px);
+}
+
+.stButton > button:focus,
+.stDownloadButton > button:focus {
+    box-shadow: 0 0 0 3px rgba(100, 139, 213, 0.22);
+}
+
+/* -------------------- Metrics -------------------- */
+
+[data-testid="stMetric"] {
+    background: #ffffff;
+    border: 1px solid #e0e8f6;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 5px 18px rgba(62, 96, 150, 0.06);
+}
+
+[data-testid="stMetricLabel"] {
+    color: #64748b;
+}
+
+[data-testid="stMetricValue"] {
+    color: #4269a5;
+    font-weight: 750;
+}
+
+/* -------------------- Alerts -------------------- */
+
+[data-testid="stAlert"] {
+    border-radius: 12px;
+    border: 1px solid #dce6f7;
+}
+
+/* -------------------- Divider -------------------- */
+
+hr {
+    border-color: #dce5f3;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* -------------------- Footer -------------------- */
+
+.footer {
+    width: 100%;
+    margin-top: 50px;
+    padding: 25px 10px 15px;
+    text-align: center;
+    color: #64748b;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.footer-line {
+    width: 100%;
+    height: 1px;
+    background: #dce5f3;
+    margin-bottom: 22px;
+}
+
+.footer p {
+    color: #718096;
+    margin: 5px 0;
+}
+
+/* -------------------- Responsive Layout -------------------- */
+
+@media (max-width: 768px) {
+    .block-container {
+        padding: 1rem 1rem 0.5rem;
+    }
+
+    h1 {
+        font-size: 1.8rem !important;
+    }
+
+    .footer {
+        font-size: 13px;
+        padding-top: 20px;
+    }
+
+    [data-testid="stMetric"] {
+        padding: 12px;
+    }
+}
+.stButton > button:has(*) {
+    font-size: 20px;
+}
